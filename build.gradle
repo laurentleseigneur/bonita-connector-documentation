@@ -1,0 +1,22 @@
+plugins {
+    id 'groovy'
+}
+
+group 'com.bonitasoft.connectors'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+   compile 'org.codehaus.groovy:groovy-all:2.5.5'
+
+    testCompile 'org.codehaus.groovy:groovy-all:2.5.5'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+    testCompile 'net.bytebuddy:byte-buddy:1.7.1'
+    testCompile group: 'org.objenesis', name: 'objenesis', version: '1.2'
+    testCompile 'com.github.stefanbirkner:system-rules:1.17.1'
+
+}
